@@ -1,0 +1,92 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+    /*color: inherit;
+    font: inherit;    
+    outline: none;*/    
+    }
+
+   body{
+       height: 100vh;
+   }
+
+   header{
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    display: flex;
+    padding: 0 8%;
+    box-shadow: 0 5px 10px blue;
+   }
+
+   header nav ul li{
+    position: relative;
+    float: left;
+   }
+
+   header nav ul li a{
+    padding: 15px;
+    color:white;
+    font-size: 16px;
+    display: block;
+    transition: scale(1.2);
+   }
+
+   header nav ul li a:hover{
+    background: darkgoldenrod;
+    color:white;
+   }
+
+   nav ul li ul {
+    position: absolute;
+    left: 0;
+    width: 180px;
+    background: black;
+    display: none;/*спрятал дочерние элементы меню*/
+   }
+
+   nav ul li ul li{
+    width: 100%;
+    border: 1px solid;
+    border-color: grey;
+   }
+
+   nav ul li ul li ul{
+    left: 180px;
+    top:0;
+   }
+
+   nav ul li:hover>ul{
+    display: initial;
+   }
+
+   nav ul li ul li ul li:nth-child(odd){
+   background-color: blue;
+   }
+
+   nav ul li ul li ul li:nth-child(even){
+    background-color: green;
+    }
+   nav ul li ul li ul li:last-child{
+    background-color: purple;
+    }
+
+
+
+/*
+1 синий
+  2 зеленый
+3 синий
+  4 зеленый
+5 синий
+       6 фиолетовый
+ */
